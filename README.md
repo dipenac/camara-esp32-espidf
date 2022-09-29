@@ -33,12 +33,15 @@ En este punto el entorno de desarrollo ESP-IDF debe estar configurado y listo pa
    cd ~/esp-idf/components
    git clone --recursive https://github.com/espressif/esp32-camera
    ``` 
-
+ - [x] Una vez clonado el repositorio en la carpeta correspondiente, se procede a [crear un proyecto](#crear-un-proyecto-esp-idf) un proyecto ESP-IDF) para implementar sobre este los ajustes necesarios para que el driver de la camara funcione junto con el esp32-cam.
  ```c
     #include <esp_camera.h>
  ```
 
  ## Implementacion
+ 
+ ### Crear un proyecto ESP-IDF
+ 
 
  ### Inicializacion camara con esp32
  ### Ejemplo guardar imagen en SD 
