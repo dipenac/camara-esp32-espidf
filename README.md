@@ -41,7 +41,28 @@ En este punto el entorno de desarrollo ESP-IDF debe estar configurado y listo pa
  ## Implementacion
  
  ### Crear un proyecto ESP-IDF
- 
+ El entorno de desarrollo ESP-IDF permite realizar varias acciones por medio de el archivo ***idf.py***. En este caso mostraremos un pequeno instructivo para registrar como **crear, construir y ejecutar** un proyecto en esp-32.
+
+ - [x] En primer lugar es recomendable crear una carpeta en donde se puedan alojar todos los proyectos que se vayan a realizar.
+
+ ```sh
+ mkdir ~/esp-idf/projects
+ ```
+ - [x] Y dentro del folder de *projects* utilizamos una de las funciones que presta ***idf.py***, con la cual creamos un projecto con el nombre que deseemos.
+
+ ```sh
+ idf.py create-project "nombre-del-proyecto"
+ ```
+ ```sh
+ Ejemplo: idf.py create-project helloworld
+ ```
+ - [ ] Todas las funciones que presta ***idf.py*** se pueden observar ejecutando el siguiente comando.
+
+ ```sh
+ idf.py --help
+ ```
+
+ - [x] 
 
  ### Inicializacion camara con esp32
  ### Ejemplo guardar imagen en SD 
