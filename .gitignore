@@ -1,2 +1,4 @@
-#ignore module camara
-camara
+#ignore dependencies
+*.lock
+sdkconfig*
+/src/camara/build
