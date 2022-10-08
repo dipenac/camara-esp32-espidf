@@ -33,7 +33,7 @@ En este punto el entorno de desarrollo ESP-IDF debe estar configurado y listo pa
    cd ~/esp-idf/components
    git clone --recursive https://github.com/espressif/esp32-camera
    ``` 
- - [x] Una vez clonado el repositorio en la carpeta correspondiente, se procede a [crear un proyecto](#crear-un-proyecto-esp-idf) un proyecto ESP-IDF) para implementar sobre este los ajustes necesarios para que el driver de la camara funcione junto con el esp32-cam.
+ - [x] Una vez clonado el repositorio en la carpeta correspondiente, se procede a [crear un proyecto](#crear-un-proyecto-esp-idf) en ESP-IDF. Una vez creado el proeycto es necesario realizar los ajustes necesarios para que el driver de la camara funcione junto con el esp32-cam, referirse a [inicializacion camara con esp32](#inicializacion-camara-con-esp32).
     ```c
     #include <esp_camera.h>
     ```
@@ -79,8 +79,26 @@ En este punto el entorno de desarrollo ESP-IDF debe estar configurado y listo pa
     ```
 Lo siguiente es desarrollar nuestros proyectos e importar las librerias necesarias para el manejo de los perifericos integrados en el microcontrolador.
 
- ### Inicializacion camara con esp32
- 
+### Inicializacion camara con esp32
+ Antes de utilizar el driver de la camara, debemos hacer uso del modulo PSRAM externo con el que cuenta el esp32cam. Asi como ajustar la frecuencia de la memoria FLASH y PSRAM a 80 MHz.
+  - [X] Dirigirse a la ubicacion del proyecto y ejecutar el siguiente comando para realziar las configuraciones.
+    ```sh
+    idf.py menuconfig
+    ```
+  - [X] Esto abrira un entorno grafico por terminal que permitira cambiar el archivo **sdkconfig**.
+    1. **Cambiar frecuencia memoria FLASH**
+       ![menu1](/docs/img/menu1.png)
+       ![menu2](/docs/img/menu2.png)
+       ![menu3](/docs/img/menu3.png)
+       
+    2. **Habilitar la PSRAM externa y cambiar frecuencia SPRAM**.
+       ![menu4](/docs/img/menu4.png)
+       ![menu5](/docs/img/menu5.png)
+       ![menu6](/docs/img/menu6.png)
+       ![menu7](/docs/img/menu7.png) 
+       ![menu8](/docs/img/menu8.png)
+       ![menu9](/docs/img/menu9.png)
+
  ### Ejemplo guardar imagen en SD 
 
 
