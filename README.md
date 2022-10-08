@@ -34,37 +34,53 @@ En este punto el entorno de desarrollo ESP-IDF debe estar configurado y listo pa
    git clone --recursive https://github.com/espressif/esp32-camera
    ``` 
  - [x] Una vez clonado el repositorio en la carpeta correspondiente, se procede a [crear un proyecto](#crear-un-proyecto-esp-idf) un proyecto ESP-IDF) para implementar sobre este los ajustes necesarios para que el driver de la camara funcione junto con el esp32-cam.
- ```c
+    ```c
     #include <esp_camera.h>
- ```
+    ```
 
  ## Implementacion
  
- ### Crear un proyecto ESP-IDF
+ ### Crear un proyecto ESP-IDF para esp32
  El entorno de desarrollo ESP-IDF permite realizar varias acciones por medio de el archivo ***idf.py***. En este caso mostraremos un pequeno instructivo para registrar como **crear, construir y ejecutar** un proyecto en esp-32.
 
  - [x] En primer lugar es recomendable crear una carpeta en donde se puedan alojar todos los proyectos que se vayan a realizar.
 
- ```sh
- mkdir ~/esp-idf/projects
- ```
+    ```sh
+    mkdir ~/esp-idf/projects
+    ```
  - [x] Y dentro del folder de *projects* utilizamos una de las funciones que presta ***idf.py***, con la cual creamos un projecto con el nombre que deseemos.
 
- ```sh
- idf.py create-project "nombre-del-proyecto"
- ```
- ```sh
- Ejemplo: idf.py create-project helloworld
- ```
- - [ ] Todas las funciones que presta ***idf.py*** se pueden observar ejecutando el siguiente comando.
+    ```sh
+    cd ~/esp-idf/projects
+    idf.py create-project "nombre-del-proyecto"
+    ```
+    ```sh
+    Ejemplo: idf.py create-project helloworld
+    ```
+      > Todas las funciones que presta ***idf.py*** se pueden observar ejecutando el siguiente comando.
 
- ```sh
- idf.py --help
- ```
+      ```sh
+        idf.py --help
+      ```
 
- - [x] 
+ - [x] Lo siguiente es ingresar al folder del proyecto, y establecer el microcontrolador que estamos usando (en este caso el esp32cam corresponde a un esp32).
+
+    ```sh
+    cd helloworld
+    idf.py set-target esp32
+    ```
+    > Todos los microcontroladores disponibles se pueden visualizar con el siguiente comando.
+    ```sh
+    idf.py set-target --help
+    ```
+ - [X] Una vez establecido el microcontrolador se construye el proyecto para importar todas las dependencias necesarias para manejar el esp32 que estamos usando.
+    ```sh
+    idf.py build
+    ```
+Lo siguiente es desarrollar nuestros proyectos e importar las librerias necesarias para el manejo de los perifericos integrados en el microcontrolador.
 
  ### Inicializacion camara con esp32
+ 
  ### Ejemplo guardar imagen en SD 
 
 
