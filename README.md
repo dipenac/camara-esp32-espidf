@@ -86,12 +86,13 @@ Lo siguiente es desarrollar nuestros proyectos e importar las librerias necesari
     idf.py menuconfig
     ```
   - [X] Esto abrira un entorno grafico por terminal que permitira cambiar el archivo **sdkconfig**.
-    1. **Cambiar frecuencia memoria FLASH**
+  
+    * **Cambiar frecuencia memoria FLASH**
        ![menu1](/docs/img/menu1.png)
        ![menu2](/docs/img/menu2.png)
        ![menu3](/docs/img/menu3.png)
        
-    2. **Habilitar la PSRAM externa y cambiar frecuencia SPRAM**.
+    * **Habilitar la PSRAM externa y cambiar frecuencia SPRAM**.
        ![menu4](/docs/img/menu4.png)
        ![menu5](/docs/img/menu5.png)
        ![menu6](/docs/img/menu6.png)
