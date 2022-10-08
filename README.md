@@ -100,6 +100,9 @@ Lo siguiente es desarrollar nuestros proyectos e importar las librerias necesari
        ![menu8](/docs/img/menu8.png)
        ![menu9](/docs/img/menu9.png)
 
- ### Ejemplo guardar imagen en SD 
+Con estas configuraciones ya es posible utilizar la camara y la PSRAM externa con la que cuenta el esp32.
+```c
+#include <esp_camera.h>
+```
 
 
