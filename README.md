@@ -105,5 +105,9 @@ Con estas configuraciones ya es posible utilizar la camara y la PSRAM externa co
 #include <esp_camera.h>
 ```
 
+<<<<<<< Updated upstream
 
 hola
+=======
+xd
+>>>>>>> Stashed changes
