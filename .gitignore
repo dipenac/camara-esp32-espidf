@@ -1,4 +1,6 @@
 #ignore dependencies
 *.lock
 sdkconfig*
+#ignore build folders
 /src/camara/build
+/src/communication/build
