@@ -5,3 +5,5 @@ sdkconfig*
 /src/camara/build
 /src/communication/build
 /src/test/build
+.gitignore
+.gitattributes
