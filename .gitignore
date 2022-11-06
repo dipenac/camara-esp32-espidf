@@ -4,3 +4,4 @@ sdkconfig*
 #ignore build folders
 /src/camara/build
 /src/communication/build
+/src/test/build
