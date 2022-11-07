@@ -64,7 +64,7 @@ La implementacion realizada en el proyecto se basa en la informacion obtenida de
 - [X] Luego se procede a inicializar el servicio de esp-now en donde se especifican las funciones a ejecutar para cuantos los registros de recepcion y transmision se vean consumidos.
 
     ```c
-        static void espnow_init(void){
+    static void espnow_init(void){
         
         ESP_ERROR_CHECK( esp_now_init() );
         ESP_ERROR_CHECK( esp_now_register_send_cb(espnow_send_cb) );
