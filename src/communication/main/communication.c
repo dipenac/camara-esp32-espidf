@@ -20,7 +20,7 @@
 #define ESPNOW_WIFI_IF  ESP_IF_WIFI_AP
 
 // THE MAC Address of receiver 
-uint8_t broadcastAddress[] = {0x0c, 0xb8, 0x15, 0xd2, 0x9f, 0x9d};
+uint8_t broadcastAddress[] = {0x58, 0xbf, 0x25, 0x18, 0x8, 0x1};
 //uint8_t broadcastAddress[] = {0x94, 0xb9, 0x7e, 0xce, 0x1f, 0x2d};
 //uint8_t broadcastAddress[] = {0x08, 0x3a, 0xf2, 0xbb, 0x1c, 0xd1};
 
@@ -100,9 +100,15 @@ void app_main(void)
 
     wifi_init();
     espnow_init();
-    msg_send.inf = 14;
-    msg_send.state = 10;
+    msg_send.inf = 20;
+    msg_send.state = 20;
     while (true) {
+    uint8_t derived_mac_addr[6] = {0};
+    //Get MAC address for WiFi Station interface
+    ESP_ERROR_CHECK(esp_read_mac(derived_mac_addr, ESP_MAC_WIFI_STA));
+    ESP_LOGI("WIFI_STA MAC", "0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x",
+             derived_mac_addr[0], derived_mac_addr[1], derived_mac_addr[2],
+             derived_mac_addr[3], derived_mac_addr[4], derived_mac_addr[5]);
     esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &msg_send, sizeof(msg_send));
     if(result == ESP_OK){
         printf("Send success\n");

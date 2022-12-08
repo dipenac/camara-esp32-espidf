@@ -7,3 +7,5 @@ sdkconfig*
 /src/test/build
 .gitignore
 .gitattributes
+/src/take_picture/build
+/src/sd_capture/build
