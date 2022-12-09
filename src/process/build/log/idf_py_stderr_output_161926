@@ -1,0 +1,8 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:209:75: error: 'tReply' undeclared (first use in this function)
+  209 |          if (heap_caps_get_free_size( MALLOC_CAP_SPIRAM) <  ARRAY_LENGTH) tReply+=" -Error not enough free psram to store rgb data- ";      // check free memory in psram
+      |                                                                           ^~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:209:75: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

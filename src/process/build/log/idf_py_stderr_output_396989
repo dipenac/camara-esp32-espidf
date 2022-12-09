@@ -1,0 +1,7 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:186:13: warning: unused variable 'vomax' [-Wunused-variable]
+  186 |     uint8_t vomax[3] = {0x28,0x8c,0xf}; // Valores maximos de verde oscuro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:182:13: warning: unused variable 'vcmin' [-Wunused-variable]
+  182 |     uint8_t vcmin[3] = {0x28,0xa0,0x0}; // Valores minimos de verde claro en hexadecimal en orden RGB
+      |             ^~~~~

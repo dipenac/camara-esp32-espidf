@@ -1,0 +1,14 @@
+Compiler supported targets: xtensa-esp32-elf
+
+Compiler supported targets: xtensa-esp32-elf
+
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:223:18: warning: unused variable 'arrsize' [-Wunused-variable]
+  223 |         uint32_t arrsize = *ptrVal;
+      |                  ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:189:13: warning: unused variable 'vomax' [-Wunused-variable]
+  189 |     uint8_t vomax[3] = {0x28,0x8c,0xf}; // Valores maximos de verde oscuro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:179:14: warning: unused variable 'resultsToShow' [-Wunused-variable]
+  179 |     uint32_t resultsToShow = 0xa;     // how much data to display
+      |              ^~~~~~~~~~~~~

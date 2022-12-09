@@ -1,0 +1,68 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:205:25: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  205 |         uint8_t array = (uint8_t )ptrVal;
+      |                         ^
+In file included from /home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:1:
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:45: error: subscripted value is neither array nor pointer nor vector
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |                                             ^
+/home/daniel/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:14: note: in expansion of macro 'ESP_LOGI'
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |              ^~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:45: error: subscripted value is neither array nor pointer nor vector
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |                                             ^
+/home/daniel/esp-idf/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:14: note: in expansion of macro 'ESP_LOGI'
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |              ^~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:45: error: subscripted value is neither array nor pointer nor vector
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |                                             ^
+/home/daniel/esp-idf/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:14: note: in expansion of macro 'ESP_LOGI'
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |              ^~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:45: error: subscripted value is neither array nor pointer nor vector
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |                                             ^
+/home/daniel/esp-idf/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:14: note: in expansion of macro 'ESP_LOGI'
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |              ^~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:45: error: subscripted value is neither array nor pointer nor vector
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |                                             ^
+/home/daniel/esp-idf/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:14: note: in expansion of macro 'ESP_LOGI'
+  222 |              ESP_LOGI(TAG, "Data: %x", array[i]);
+      |              ^~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

@@ -1,0 +1,8 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:212:13: error: size '3999999996' of array 'array' exceeds maximum object size '2147483647'
+  212 |         int array [999999999];
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:212:13: warning: unused variable 'array' [-Wunused-variable]
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

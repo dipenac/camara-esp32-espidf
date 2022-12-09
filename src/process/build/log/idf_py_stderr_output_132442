@@ -1,0 +1,11 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:176:14: warning: unused variable 'resultsToShow' [-Wunused-variable]
+  176 |     uint32_t resultsToShow = 5;     // how much data to display
+      |              ^~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:208:31: error: 'rgb' may be used uninitialized [-Werror=maybe-uninitialized]
+  208 |         bool jpeg_converted = fmt2rgb888(pic->buf, pic->len, PIXFORMAT_JPEG, rgb);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4712: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

@@ -1,0 +1,20 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'task1':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:224:18: warning: unused variable 'arrsize' [-Wunused-variable]
+  224 |         uint32_t arrsize = *ptrVal;
+      |                  ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:190:13: warning: unused variable 'vomax' [-Wunused-variable]
+  190 |     uint8_t vomax[3] = {0x28,0x8c,0xf}; // Valores maximos de verde oscuro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:180:14: warning: unused variable 'resultsToShow' [-Wunused-variable]
+  180 |     uint32_t resultsToShow = 0xa;     // how much data to display
+      |              ^~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:333:50: error: expected ';' before '}' token
+  333 |     xTaskCreate(task1,"task1",1024*8,NULL,1,NULL)
+      |                                                  ^
+      |                                                  ;
+  334 | }
+      | ~                                                 
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

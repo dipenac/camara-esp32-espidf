@@ -1,0 +1,11 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is unknown
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring incomplete, errors occurred!
+See also "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/take_picture/main/build/CMakeFiles/CMakeOutput.log".
+See also "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/take_picture/main/build/CMakeFiles/CMakeError.log".

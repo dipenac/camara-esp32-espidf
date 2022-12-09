@@ -1,0 +1,129 @@
+In file included from /home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:1:
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:262:9: note: in expansion of macro 'ESP_LOGI'
+  262 |         ESP_LOGI(TAG, "Longitud: %d", *ptrVal);
+      |         ^~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:262:9: note: in expansion of macro 'ESP_LOGI'
+  262 |         ESP_LOGI(TAG, "Longitud: %d", *ptrVal);
+      |         ^~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:262:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  262 |         ESP_LOGI(TAG, "Longitud: %d", *ptrVal);
+      | ^       ~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:262:9: note: in expansion of macro 'ESP_LOGI'
+  262 |         ESP_LOGI(TAG, "Longitud: %d", *ptrVal);
+      |         ^~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:262:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  262 |         ESP_LOGI(TAG, "Longitud: %d", *ptrVal);
+      | ^       ~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:262:9: note: in expansion of macro 'ESP_LOGI'
+  262 |         ESP_LOGI(TAG, "Longitud: %d", *ptrVal);
+      |         ^~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/daniel/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:262:9: note: in expansion of macro 'ESP_LOGI'
+  262 |         ESP_LOGI(TAG, "Longitud: %d", *ptrVal);
+      |         ^~~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:220:18: warning: unused variable 'arrsize' [-Wunused-variable]
+  220 |         uint32_t arrsize = *ptrVal;
+      |                  ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:189:13: warning: unused variable 'amax' [-Wunused-variable]
+  189 |     uint8_t amax[3] = {0xeb,0xff,0x28}; // Valores maximos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:188:13: warning: unused variable 'amin' [-Wunused-variable]
+  188 |     uint8_t amin[3] = {0xb4,0xdc,0x0}; // Valores minimos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:186:13: warning: unused variable 'vomax' [-Wunused-variable]
+  186 |     uint8_t vomax[3] = {0x28,0x8c,0xf}; // Valores maximos de verde oscuro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:185:13: warning: unused variable 'vomin' [-Wunused-variable]
+  185 |     uint8_t vomin[3] = {0xa,0x1e,0x5}; // Valores minimos de verde oscuro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:183:13: warning: unused variable 'vcmax' [-Wunused-variable]
+  183 |     uint8_t vcmax[3] = {0x50,0xff,0x32}; // Valores maximos de verde claro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:182:13: warning: unused variable 'vcmin' [-Wunused-variable]
+  182 |     uint8_t vcmin[3] = {0x28,0xa0,0x0}; // Valores minimos de verde claro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:180:13: warning: unused variable 'cmax' [-Wunused-variable]
+  180 |     uint8_t cmax[3] = {0xa0,0x8c,0x32}; // Valores maximos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:179:13: warning: unused variable 'cmin' [-Wunused-variable]
+  179 |     uint8_t cmin[3] = {0x32,0x32,0x5}; // Valores minimos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:176:14: warning: unused variable 'resultsToShow' [-Wunused-variable]
+  176 |     uint32_t resultsToShow = 0xa;     // how much data to display
+      |              ^~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

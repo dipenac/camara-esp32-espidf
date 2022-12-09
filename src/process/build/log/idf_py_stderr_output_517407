@@ -1,0 +1,7 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:18:10: fatal error: soc/rtc_wdt.h: No such file or directory
+   18 | #include "soc/rtc_wdt.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

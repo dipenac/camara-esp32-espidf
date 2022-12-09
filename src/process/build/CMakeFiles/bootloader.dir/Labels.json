@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

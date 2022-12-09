@@ -1,0 +1,39 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:180:5: error: expected ',' or ';' before 'uint8_t'
+  180 |     uint8_t cmax[3] = {0xa0,0x8c,0x32} // Valores maximos de cafe en hexadecimal en orden RGB
+      |     ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:183:5: error: expected ',' or ';' before 'uint8_t'
+  183 |     uint8_t vcmax[3] = {0x50,0xff,0x32} // Valores maximos de verde claro en hexadecimal en orden RGB
+      |     ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:186:5: error: expected ',' or ';' before 'uint8_t'
+  186 |     uint8_t vomax[3] = {0x28,0x8c,0xf} // Valores maximos de verde oscuro en hexadecimal en orden RGB
+      |     ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:189:5: error: expected ',' or ';' before 'uint8_t'
+  189 |     uint8_t amax[3] = {0xeb,0xff,0x28} // Valores maximos de cafe en hexadecimal en orden RGB
+      |     ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:228:34: warning: comparison between pointer and integer
+  228 |         for (uint32_t i = 0x0; i < ptrVal; i++) {
+      |                                  ^
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:231:48: error: 'cmax' undeclared (first use in this function)
+  231 |                 if (((rgb[i]<cmin[1])||(rgb[i]>cmax[1]))||((rgb[i]<vomin[1])||(rgb[i]>vcmax[1]))||((rgb[i]<amin[1])||(rgb[i]>amax[1]))) rgb[i] = 0x0;
+      |                                                ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:231:48: note: each undeclared identifier is reported only once for each function it appears in
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:231:87: error: 'vcmax' undeclared (first use in this function)
+  231 |                 if (((rgb[i]<cmin[1])||(rgb[i]>cmax[1]))||((rgb[i]<vomin[1])||(rgb[i]>vcmax[1]))||((rgb[i]<amin[1])||(rgb[i]>amax[1]))) rgb[i] = 0x0;
+      |                                                                                       ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:231:126: error: 'amax' undeclared (first use in this function)
+  231 |                 if (((rgb[i]<cmin[1])||(rgb[i]>cmax[1]))||((rgb[i]<vomin[1])||(rgb[i]>vcmax[1]))||((rgb[i]<amin[1])||(rgb[i]>amax[1]))) rgb[i] = 0x0;
+      |                                                                                                                              ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:234:32: error: 'tReply' undeclared (first use in this function)
+  234 |             else if (i%3 == 1) tReply+="G";
+      |                                ^~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:236:22: error: implicit declaration of function 'String' [-Werror=implicit-function-declaration]
+  236 |             tReply+= String(rgb[i]) + ",";
+      |                      ^~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:182:13: warning: unused variable 'vcmin' [-Wunused-variable]
+  182 |     uint8_t vcmin[3] = {0x28,0xa0,0x0} // Valores minimos de verde claro en hexadecimal en orden RGB
+      |             ^~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

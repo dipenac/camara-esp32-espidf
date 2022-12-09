@@ -1,0 +1,31 @@
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:222:18: warning: unused variable 'arrsize' [-Wunused-variable]
+  222 |         uint32_t arrsize = *ptrVal;
+      |                  ^~~~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:191:13: warning: unused variable 'amax' [-Wunused-variable]
+  191 |     uint8_t amax[3] = {0xeb,0xff,0x28}; // Valores maximos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:190:13: warning: unused variable 'amin' [-Wunused-variable]
+  190 |     uint8_t amin[3] = {0xb4,0xdc,0x0}; // Valores minimos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:188:13: warning: unused variable 'vomax' [-Wunused-variable]
+  188 |     uint8_t vomax[3] = {0x28,0x8c,0xf}; // Valores maximos de verde oscuro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:187:13: warning: unused variable 'vomin' [-Wunused-variable]
+  187 |     uint8_t vomin[3] = {0xa,0x1e,0x5}; // Valores minimos de verde oscuro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:185:13: warning: unused variable 'vcmax' [-Wunused-variable]
+  185 |     uint8_t vcmax[3] = {0x50,0xff,0x32}; // Valores maximos de verde claro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:184:13: warning: unused variable 'vcmin' [-Wunused-variable]
+  184 |     uint8_t vcmin[3] = {0x28,0xa0,0x0}; // Valores minimos de verde claro en hexadecimal en orden RGB
+      |             ^~~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:182:13: warning: unused variable 'cmax' [-Wunused-variable]
+  182 |     uint8_t cmax[3] = {0xa0,0x8c,0x32}; // Valores maximos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:181:13: warning: unused variable 'cmin' [-Wunused-variable]
+  181 |     uint8_t cmin[3] = {0x32,0x32,0x5}; // Valores minimos de cafe en hexadecimal en orden RGB
+      |             ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:178:14: warning: unused variable 'resultsToShow' [-Wunused-variable]
+  178 |     uint32_t resultsToShow = 0xa;     // how much data to display
+      |              ^~~~~~~~~~~~~

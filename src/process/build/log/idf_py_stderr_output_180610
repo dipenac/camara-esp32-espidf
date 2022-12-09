@@ -1,0 +1,16 @@
+In file included from /home/daniel/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/time.h:16,
+                 from /home/daniel/esp-idf/components/newlib/platform_include/time.h:11,
+                 from /home/daniel/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/sys/time.h:414,
+                 from /home/daniel/esp-idf/components/newlib/platform_include/sys/time.h:21,
+                 from /home/daniel/esp-idf/components/esp32-camera/driver/include/esp_camera.h:72,
+                 from /home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:22:
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c: In function 'app_main':
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:212:25: error: invalid initializer
+  212 |         char array [] = NULL;
+      |                         ^~~~
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/main/process.c:213:15: error: assignment to expression with array type
+  213 |         array = *rgb;
+      |               ^
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:63: esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4739: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/CMakeFiles/bootloader
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/CMakeFiles/bootloader.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/CMakeFiles/bootloader-complete.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/daniel/Documents/GitHub/camara-esp32-espidf/src/process/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/daniel/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/__main__.py", line 11, in <module>
+    esptool._main()
+  File "/home/daniel/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/__init__.py", line 1026, in _main
+    main()
+  File "/home/daniel/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/__init__.py", line 810, in main
+    esp.flash_set_parameters(flash_size_bytes(args.flash_size))
+  File "/home/daniel/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 1145, in flash_set_parameters
+    self.check_command(
+  File "/home/daniel/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 407, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+  File "/home/daniel/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 376, in command
+    p = self.read()
+  File "/home/daniel/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 308, in read
+    return next(self._slip_reader)
+StopIteration
+CMake Error at run_serial_tool.cmake:55 (message):
+  
+  /home/daniel/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/daniel/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed
+
+
+make[3]: *** [CMakeFiles/flash.dir/build.make:57: CMakeFiles/flash] Error 1
+make[2]: *** [CMakeFiles/Makefile2:1909: CMakeFiles/flash.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:1916: CMakeFiles/flash.dir/rule] Error 2
+make: *** [Makefile:203: flash] Error 2
